@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="keywords" content="管件,弯头管件,三通管件,异径管,大小头,法兰">
+		<meta name="description" content="恒通管件制造有限公司是生产销售于一体的管件,弯头管件,三通管件,异径管管件,大小头,法兰等产品的企业,真诚欢迎国内外客商前来洽谈合作!">
+		<title>新闻咨询</title>
+
+		<script src="../plugins/jquery/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<script src="../plugins/bootstrap-3.3.7-dist/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+
+		<script title="text/javascript">
+			$(function() {
+				var liList = $(".list-unstyled li");
+				liList.click(function() {
+					for(var i = 0; i < liList.length; i++) {
+						$('.info').get(i).classList.add('hidden');
+					}
+					$('.info').get($(this).index()).classList.remove('hidden');
+				});
+			});
+
+			$(document).ready(function() {
+				var indexFromLi = getParams("index");
+				if(indexFromLi) {
+					var liList = $(".list-unstyled li");
+					for(var i = 0; i < liList.length; i++) {
+						$('.info').get(i).classList.add('hidden');
+					}
+					$('.info').get(indexFromLi).classList.remove('hidden');
+				}
+
+				$('.fotterHtml').load('fotter.html');
+			});
+
+			function getParams(key) {
+				var reg = new RegExp("(^|&)" + key + "=([^&]*)(&|$)");
+				var r = window.location.search.substr(1).match(reg);
+				if(r != null) {
+					return unescape(r[2]);
+				}
+				return null;
+			};
+		</script>
+	</head>
+
+	<body>
+		<!--页头-->
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-10">
+				<!--logo-->
+				<img src="../img/logo.jpg" />
+				<!--导航栏-->
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+						<ul class="nav nav-pills nav-justified">
+							<li role="presentation">
+								<a href="index.html">
+									<h4>网站首页</p></h4></a>
+							</li>
+							<li role="presentation">
+								<a href="info.html" target="_self">
+									<h4>公司简介</p></h4></a>
+							</li>
+							<li role="presentation" class="active">
+								<a href="news.html" target="_self">
+									<h4>新闻咨询</h4></a>
+							</li>
+							<li role="presentation">
+								<a href="honnr.html" target="_self">
+									<h4>资质荣誉</h4></a>
+							</li>
+							<li role="presentation">
+								<a href="equipment.html" target="_self">
+									<h4>生产设备</h4></a>
+							</li>
+							<li role="presentation">
+								<a href="product.html" target="_self">
+									<h4>产品展示</h4></a>
+							</li>
+							<!--<li role="presentation">
+								<a href="performance.html" target="_self">
+									<h4>销售业绩</h4></a>
+							</li>-->
+							<li role="presentation">
+								<a href="accNbr.html" target="_self">
+									<h4>联系我们</h4></a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+		<!--页面内容-->
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-10">
+				<div class="col-md-3">
+					<div class="row">
+						<img src="../img/news.jpg" alt="公司简介" width="285px" height="90px" />
+						<ol class="list-unstyled">
+							管件常识
+							<li>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="javascript:void(0)">中频弯管的固定螺钉选用有什么要求</a>
+								</p>
+							</li>
+							<li>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="javascript:void(0)">大型法兰的作用和在钢管塔中的应用</a>
+								</p>
+							</li>
+							<li>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="javascript:void(0)">不同的合金弯管使用的地方不一样</a>
+								</p>
+							</li>
+							公司要事
+							<li>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="javascript:void(0)">2019年公司开工会议纪要</a>
+								</p>
+							</li>
+							<li>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="javascript:void(0)">2019年3月23日公司管理干部会议纪要</a>
+								</p>
+							</li>
+							<li>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="javascript:void(0)">恒通管件集团又一产品获国家专利</a>
+								</p>
+							</li>
+						</ol>
+					</div>
+					<hr />
+					<div class="row">
+						<img src="../img/accNbr.jpeg" alt="联系电话" /><span style="font-size: 14px;font-weight:bold;">联系电话</span>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系人：韩小刚<br /></p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手机：11223344556</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮箱：1122334455@163.com<br /></p>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="info" style="font-size: 16px;">
+						<p align="left">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>中频弯管的固定螺钉选用有要求</strong><br /> 固定螺钉选用时应该按照中频弯管的使用寿命选择固定件，而且特别注意外覆材料的寿命与指定的固定件寿命是否一致。同时注意钢檩条厚度不能超过螺钉的自钻能力。目前供应的螺丝可带有塑料头、不锈钢顶盖或涂有特殊的耐久保护层。另外，除暗扣固定用螺钉外，其他螺钉均带有防水垫圈，而且针对采光板和特殊风压下的情况均配有相应的专用垫圈。 对于中频弯管的相关知识就讲解到这里了，那么大家掌握了这些知识，就会在使用的时候更加的简单了。
+						</p>
+					</div>
+					<div class="info hidden" style="font-size: 16px;">
+						<p align="left">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>大型法兰的作用和在钢管塔中的应用</strong><br /> 　　输电塔是一种量多而重要的生命线工程的电力设施，发挥重要的作用和价值。在各种材料的输电塔中，钢管塔由于其优越性而越来越广泛的采用，不断的应用在不同的领域和行业中，显示重要的价值。目前已经出现多座100m以上的跨越江河湖海的高耸钢管输电塔。于是，对钢管塔的研究显得越来越重要。近十几年来，随着我国电力工业的飞速发展，越来越多的高耸输电塔遍布神州大地，在不同的行业中使用和推广。
+							<br />型法兰节点是钢管塔的一种非常重要也是主要的连接节点形式。法兰节点的受力性能和计算方法一直是一个重要的研究课题。 大型法兰在钢管塔的制作和焊接过程中占有重要的作用，所以大型法兰的作用是重要的，需要保证大型法兰的质量和性能。
+							<br />由于跨越江河湖海的高耸钢管输电塔高度大、荷载大，传统形式的法兰盘越来越不能满足工程需要。于是提出了六种新的大型法兰：三种无加劲肋大型法兰和三种有加劲肋大型法兰，主要研究了三种形式的大型法兰：Ⅰ型、Ⅱ型无加劲肋法兰和Ⅰ型有加劲肋法兰。采取力学分析和有限元分析相结合的方法，推导得出了这三种形式的法兰的计算公式，提出了它们的设计方法，建立三维有限元模型，详细地研究了它们的受力性能。
+							<br />目前，在成功开发首台装置的基础上，已经对其进行了改进设计，并吸取了国外相关产品的经验，完成了系列化设计。该装置制造成本较国外同类产品大大降低，具有较高的开发价值，实践应用范围较广，在石化、制药等领域都具有很大的需求。
+							<br />对大型法兰进行现场加工，是困扰大型石化企业设备检修中的难题。由于大型法兰为不可拆卸零件，其所属设备体积大，无法实现高效率、高精度的机床加工。目前，在该领域已有发达国家的一些公司（如德国西门子、英国海泰斯等）开发出相关产品，但其造价昂贵。 大型法兰的应用范围，该装置广泛应用于石化、制药、天然气等大型企业中的设备检修，加工范围最大直径可达3米，适用于法兰密封面的精加工（端面、柱面）。
+							<br />大型法兰在不同的领域和行业中发挥重要的作用，显示良好的价值和贡献，所以生产和加工的大型法兰。
+						</p>
+					</div>
+					<div class="info hidden" style="font-size: 16px;">
+						<strong>合金弯管，不同的合金弯管使用的地方不一样</strong>，例如：锰钢材质的合金弯管由于锰钢具有承受冲击、挤压、物料磨损等的优良性能，通常被使用在混凝土输送管道，泥浆输送管道等磨损消耗比较严重的管道中。 而高锰钢合金弯管则被使用在流体流动比较激烈，冲击比较强的管道中;镍钢材质的合金弯管通常被用在高浓度氧化酸(硝酸、硫酸)等的常温输送管道中，但在还原酸(盐酸、稀硫酸等)的输送管道中则会被严重腐蚀，除非盐酸的浓度很低;马氏体合金弯管在650℃以下有较高的高温强度、抗氧化性和耐水汽腐蚀的能力，但焊接性较差。因此，常被用在高温水蒸气输送管道、水煤气管道。
+						<br /> 　　材质：碳钢，合金，不锈钢，铸钢，合金钢，不锈钢，铜，铝合金，塑料，氩硌沥，PVC，PPR、RFPP(增强聚丙烯)等
+						<br /> 　　制造方式：推制、压制、锻制、铸造等
+						<br /> 　　生产标准：国标、电标、船标、化标、水标、美标、德标、日标、俄标等。
+					</div>
+					<div class="info hidden" style="font-size: 16px;">
+						<p align="left">
+							<strong>2019年2月21日公司会议强调的10点</strong>
+							<br /> 1,为树立公司良好的形象，对待来宾做到门好进，脸好看，事好办，服务态度必须热情。
+							<br /> 2,为了更加规范化，对公司制度强调执行，执行，执行，要奖优罚劣。
+							<br /> 3,对公司要忠诚，一心一意，在利益面前要公、私分明。
+							<br /> 4,生产现场安全要警钟常鸣，防患于未然。要日事日毕，保持规范，干净。
+							<br /> 5,力求降低生产成本，提高工作效率。做到安排合理，亏、赢清楚，生产效率与职工切身利益联系起来。
+							<br /> 6,为准确无误相关部门及时搞好合同评审。
+							<br /> 7,尽快提升生产一线职工工资待遇。
+							<br /> 8,部门之间加强协调和沟通，以提高透明度和效率，避免失误。
+							<br /> 9,各部门辞职与新增职工及时报办公室，确定工伤保险的去留。
+							<br /> 10,为减少失误，确定有史总主持召开每天上午9点相关部门的碰头会。
+						</p>
+					</div>
+					<div class="info hidden" style="font-size: 16px;">
+						<p align="left">
+							<strong>2019年3月23日公司管理干部会议纪要：</strong>
+							<br /> &nbsp;&nbsp;&nbsp;&nbsp;一、公司通过调整战略决策，发展方向很好，以后的形势一年要比一年好，今年的发展一定会好于去年。
+							<br /> &nbsp;&nbsp;&nbsp;&nbsp;二、安全工作要常抓不懈，近期县委书记、安检大队分别到公司督查，发现不少隐患，我们也有不少的教训，该改的必须改，关键从上到下的安全意识必须增强，重在预防，防患于未然。
+							<br /> &nbsp;&nbsp;&nbsp;&nbsp;三、勤俭节约、降低生产成本。现在竞争激烈，利润空间很小，下料要设计科学，利用率最大化，提高单位时间的生产效率。大家从一点一滴做起，勤俭过日子。
+							<br /> &nbsp;&nbsp;&nbsp;&nbsp;四、各部室之间要密切协调、配合，多沟通，心往一处想，劲往一处使。合同评审要坚持做好。
+							<br /> &nbsp;&nbsp;&nbsp;&nbsp;五、严把质量关，搞好质量检测，坚持质量事故责任追纠制。
+							<br /> &nbsp;&nbsp;&nbsp;&nbsp;六、为确保公司良好的形象，人人要养成好的卫生习惯，不能随地吐痰，纸屑、果皮、烟蒂等废弃物扔进垃圾桶（箱）内。保洁、门卫确保公共场地清洁卫生。办公室确保地面、桌椅干净整洁规范。
+						</p>
+					</div>
+					<div class="info hidden" style="font-size: 20px;">
+						我公司X70、X60钢级-45℃环境用钢板制热压低温三通新产品获得国家专利，填补了这一领域的空白。
+						<br />
+						<a href="https://mp.weixin.qq.com/s/HpgNTMNXZBnlSe_QTw5cQQ">https://mp.weixin.qq.com/s/HpgNTMNXZBnlSe_QTw5cQQ</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+		<!--页脚-->
+		<div class="fotterHtml"></div>
+	</body>
+
+</html>
